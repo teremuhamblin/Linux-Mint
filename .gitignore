@@ -1,18 +1,182 @@
-# Build and Release Folders
-bin-debug/
-bin-release/
-[Oo]bj/
-[Bb]in/
+#############################
+# SYSTÈME / LINUX MINT
+#############################
 
-# Other files and folders
-.settings/
+# Fichiers système
+.DS_Store
+Thumbs.db
+ehthumbs.db
+desktop.ini
 
-# Executables
-*.swf
-*.air
-*.ipa
-*.apk
+# Caches Linux
+.cache/
+.config/*cache*/
+.local/share/Trash/
+lost+found/
 
-# Project files, i.e. `.project`, `.actionScriptProperties` and `.flexProperties`
-# should NOT be excluded as they contain compiler settings and other important
-# information for Eclipse / Flash Builder.
+# Clés SSH (ne jamais versionner)
+*.pem
+*.key
+*.pub
+
+#############################
+# LOGS & TEMPORAIRES
+#############################
+
+*.log
+*.tmp
+*.temp
+*.bak
+*.swp
+*.swo
+*.old
+*.pid
+
+# Dossiers temporaires
+tmp/
+temp/
+logs/
+
+#############################
+# DOCUMENTATION
+#############################
+
+# Fichiers générés
+*.pdf
+*.aux
+*.out
+*.toc
+*.lot
+*.lof
+*.synctex.gz
+
+# Build LaTeX
+_build/
+latex-build/
+
+#############################
+# SCRIPTS & BUILD
+#############################
+
+# Make
+*.o
+*.a
+*.so
+*.la
+*.lo
+*.obj
+
+# CMake
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+build/
+build-*/
+
+#############################
+# LANGAGES / DEV
+#############################
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.venv/
+venv/
+env/
+
+# Node.js
+node_modules/
+npm-debug.log
+yarn-error.log
+dist/
+build/
+
+# Java
+*.class
+*.jar
+*.war
+*.ear
+target/
+
+# Ruby
+.bundle/
+vendor/bundle/
+
+# Go
+bin/
+pkg/
+
+#############################
+# ÉDITEURS / IDE
+#############################
+
+# VS Code
+.vscode/
+.history/
+
+# JetBrains (IntelliJ, PyCharm…)
+.idea/
+*.iml
+
+# Vim
+*.swp
+*.swo
+
+# Emacs
+*~
+\#*\#
+
+#############################
+# VIRTUALISATION
+#############################
+
+# VirtualBox
+*.vbox
+*.vbox-prev
+*.vdi
+*.vmdk
+*.ova
+
+# VMware
+*.vmx
+*.vmxf
+*.vmsd
+*.vmdk
+*.nvram
+*.vmem
+
+#############################
+# CONTENEURS / DOCKER
+#############################
+
+docker-data/
+docker-compose.override.yml
+
+#############################
+# SAUVEGARDES / SNAPSHOTS
+#############################
+
+timeshift/
+backup/
+*.tar
+*.tar.gz
+*.zip
+
+#############################
+# AUTRES
+#############################
+
+# Images générées
+*.png
+*.jpg
+*.jpeg
+*.svg
+
+# Secrets (à ne jamais versionner)
+.env
+.env.*
+secrets/
+credentials/
