@@ -1,5 +1,3 @@
----
-
 🧱 1. Améliorations pour tes dossiers existants
 
 📁 config/
