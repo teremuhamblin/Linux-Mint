@@ -1,0 +1,10 @@
+blank_issues_enabled: false
+
+contact_links:
+  - name: Documentation du projet Linux Mint
+    url: https://github.com/ton-projet/docs
+    about: Consultez la documentation avant d’ouvrir une issue.
+
+  - name: Support Linux Mint (officiel)
+    url: https://forums.linuxmint.com/
+    about: Pour les problèmes liés directement à Linux Mint.
