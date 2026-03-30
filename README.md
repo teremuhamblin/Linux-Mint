@@ -1,6 +1,4 @@
----
-
-🐧 Projet Linux Mint
+# 🐧 Projet Linux Mint
 > Installation, Sécurisation, Automatisation & Documentation Complète
 
 Bienvenue dans ce projet dédié à la mise en place, la configuration, la sécurisation et l’automatisation d’un système Linux Mint.  
