@@ -25,7 +25,7 @@ Ce dépôt rassemble toutes les ressources nécessaires pour comprendre, install
 | docs/ | Documentation complète du projet (installation, configuration, sécurité, etc.) |
 | scripts/ | Scripts Bash d’automatisation (maintenance, sauvegardes, monitoring…) |
 | config/ | Exemples de fichiers de configuration Linux Mint |
-| projets/ | Dossier pour les projet du dépôts |
+| projets/ | Dossier pour les projets du dépôt |
 | images/ | Captures d’écran utilisées dans la documentation |
 | .gitignore | Fichier d’exclusion Git complet et optimisé |
 | LICENSE | Licence MIT du projet |
