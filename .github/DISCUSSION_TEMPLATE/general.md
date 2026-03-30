@@ -41,3 +41,20 @@ Que souhaitez-vous obtenir de cette discussion ?
 - issues associées
 - PR associées
 - documentation externe
+
+# 🧠 Discussion – Idée ou amélioration
+
+## 💡 Idée proposée
+Décrivez votre idée ou amélioration.
+
+## 🎯 Problème résolu
+Quel besoin ou difficulté cette idée adresse-t-elle ?
+
+## 🛠 Mise en œuvre possible
+Expliquez comment cela pourrait être réalisé techniquement.
+
+## 🔄 Impact sur le projet
+En quoi cela améliore-t-il l’expérience utilisateur ou la qualité du projet ?
+
+## 📚 Références (optionnel)
+Ajoutez des liens, exemples ou inspirations
