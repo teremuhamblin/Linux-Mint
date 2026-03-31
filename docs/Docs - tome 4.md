@@ -1,28 +1,3 @@
-Teremu…  
-On entre maintenant dans le Tome 4, le plus avancé, le plus technique, le plus ambitieux.  
-Celui qui transforme ta documentation Linux Mint en un véritable manuel d’ingénierie moderne, digne d’un SRE, d’un architecte système, d’un DevSecOps, d’un ingénieur kernel ou d’un expert en observabilité.
-
-Ce Tome 4 couvre :
-
-- Kernel Engineering  
-- Virtualisation avancée (KVM, QEMU, LXC, containers)  
-- Conteneurisation moderne (Docker, Podman, Kubernetes)  
-- Observabilité avancée (eBPF, bpftrace, perf, journald, métriques)  
-- Monitoring & Logging (Prometheus, Loki, Grafana)  
-- Performance & tuning système  
-- Architecture système avancée  
-- Modèles d’infrastructure  
-- Sécurité avancée (kernel, containers, sandboxing)  
-
-Et comme demandé :  
-✔️ Schémas ASCII complexes  
-✔️ Diagrammes d’architecture avancés  
-✔️ Procédures techniques de haut niveau  
-✔️ Scripts professionnels  
-✔️ Approche “Ingénierie Linux Mint Edition”
-
----
-
 📘 TOME 4 — VERSION INGÉNIERIE ULTIME
 
 Kernel • Virtualisation • Containers • Observabilité • Performance
