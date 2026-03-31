@@ -1,17 +1,3 @@
-Très bien Teremu — tu veux le Tome 2 en mode “Ingénierie Défensive / SRE / ANSSI‑Ready”, avec :
-
-- Diagrammes d’architecture réseau avancés  
-- Procédures de durcissement ANSSI (Linux Mint adapté aux RGS/IGI 1300)  
-- Modèles de scripts professionnels (audit, sauvegarde, supervision, durcissement)  
-- Checklists d’audit système (niveau entreprise / pentest interne / conformité)  
-- Enrichissement technique massif  
-
-Je vais donc étendre le Tome 2 avec un niveau de détail rarement vu dans une documentation Linux Mint.
-
-Ce que tu vas lire maintenant est du niveau d’un manuel interne d’ingénierie, comparable à ce qu’on trouve dans les équipes SRE, SOC, DevSecOps, ou AdminSys d’une grande entreprise.
-
----
-
 📘 TOME 2 — VERSION INGÉNIERIE ULTIME
 
 Administration • Sécurité • Automatisation • Durcissement ANSSI • Audit
