@@ -1,0 +1,70 @@
+# ------------------------------------------------------------
+# 📝 TEMPLATE DE COMMIT — CONVENTIONAL COMMITS
+# ------------------------------------------------------------
+# Format général :
+# <type>(<scope>): <description courte>
+#
+# Corps du message (optionnel)
+#
+# Footer (références issues, breaking changes)
+# ------------------------------------------------------------
+
+# ✏️ Ligne 1 — Titre du commit
+# Règles :
+# - 72 caractères max
+# - Pas de point final
+# - Description courte et claire
+# - type = obligatoire
+# - scope = optionnel mais recommandé
+# - description = obligatoire
+
+<type>(<scope>): <description>
+
+# ------------------------------------------------------------
+# 🧩 Types disponibles (choisis-en un) :
+#
+# feat      : ajout d’une nouvelle fonctionnalité
+# fix       : correction d’un bug
+# docs      : documentation uniquement
+# style     : changements de style (indentation, formatage)
+# refactor  : refonte interne sans changement de comportement
+# perf      : amélioration des performances
+# test      : ajout ou modification de tests
+# build     : modifications liées au build ou dépendances
+# ci        : modifications CI/CD
+# chore     : maintenance, tâches diverses
+# revert    : annulation d’un commit précédent
+# ------------------------------------------------------------
+
+# 🧭 Scopes recommandés :
+# system, kernel, security, docs, devops, cloud, ai, hpc,
+# sdr, bio, nano, scripts, install, config, ui, network, etc.
+# ------------------------------------------------------------
+
+# ✏️ Corps du commit (optionnel)
+# - Explique le "pourquoi" et le "comment"
+# - Peut contenir plusieurs paragraphes
+# - Utilise un ton technique et clair
+#
+# Exemple :
+# Ajout du guide complet sur eBPF dans le Tome 6.
+# Inclut des exemples, des scripts et des schémas ASCII.
+#
+# Laisse une ligne vide avant et après ce bloc.
+
+<body>
+
+# ------------------------------------------------------------
+# 🔗 Footer (optionnel)
+#
+# Références issues :
+# Closes: #12
+# Fixes: #34
+# Refs: #56
+#
+# Breaking changes :
+# BREAKING CHANGE: modification incompatible avec les versions précédentes
+#
+# ------------------------------------------------------------
+
+<footer>
