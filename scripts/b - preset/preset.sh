@@ -1,66 +1,43 @@
 #!/usr/bin/env bash
 
 ###############################################################################
-# LMEE Preset: Full Linux Mint Engineering Edition
-# Installs ALL modules required for a complete engineering environment.
+# LMEE Preset: Full++ Linux Mint Engineering Edition
 ###############################################################################
 
 set -euo pipefail
 
-MODULES_DIR="$(dirname "$0")/../modules"
-LOG_FILE="/var/log/lmee-full-preset.log"
+BASE_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
+MODULES_DIR="$BASE_DIR/modules"
+CONFIG_DIR="$BASE_DIR/config"
+LOG_FILE="/var/log/lmee-full-plus.log"
+
+source "$CONFIG_DIR/modules.conf"
 
 log() {
-    echo "[LMEE-FULL] $1" | tee -a "$LOG_FILE"
+    echo "[LMEE-FULL++] $1" | tee -a "$LOG_FILE"
 }
 
 run_module() {
-    local module_path="$1"
+    local rel_path="$1"
+    local module_path="$MODULES_DIR/$rel_path"
 
     if [[ -f "$module_path" ]]; then
-        log "Running module: $module_path"
+        log "Running module: $rel_path"
         bash "$module_path"
     else
-        log "ERROR: Module not found: $module_path"
+        log "ERROR: Module not found: $rel_path"
         exit 1
     fi
 }
 
-log "Starting FULL Linux Mint Engineering Edition preset..."
+main() {
+    log "Starting FULL++ Linux Mint Engineering Edition preset..."
 
-# -----------------------------------------------------------------------------
-# Shell & Terminal
-# -----------------------------------------------------------------------------
-run_module "$MODULES_DIR/shell/zsh.sh"
+    for module in "${PRESET_full[@]}"; do
+        run_module "$module"
+    done
 
-# -----------------------------------------------------------------------------
-# Developer Tools
-# -----------------------------------------------------------------------------
-run_module "$MODULES_DIR/dev/dev-tools.sh"
+    log "FULL++ Linux Mint Engineering Edition preset completed successfully."
+}
 
-# -----------------------------------------------------------------------------
-# Sysadmin Tools
-# -----------------------------------------------------------------------------
-run_module "$MODULES_DIR/sysadmin/sysadmin-tools.sh"
-
-# -----------------------------------------------------------------------------
-# Network Tools
-# -----------------------------------------------------------------------------
-run_module "$MODULES_DIR/network/network-tools.sh"
-
-# -----------------------------------------------------------------------------
-# Security & Hardening
-# -----------------------------------------------------------------------------
-run_module "$MODULES_DIR/security/hardening.sh"
-
-# -----------------------------------------------------------------------------
-# System Optimizations
-# -----------------------------------------------------------------------------
-run_module "$MODULES_DIR/system/optimizations.sh"
-
-# -----------------------------------------------------------------------------
-# Engineering Applications Suite
-# -----------------------------------------------------------------------------
-run_module "$MODULES_DIR/apps/engineering-suite.sh"
-
-log "FULL Linux Mint Engineering Edition preset completed successfully."
+main "$@"
