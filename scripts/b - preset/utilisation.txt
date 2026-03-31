@@ -1,0 +1,14 @@
+Utilisation du script PRESET
+
+chmod +x lmee.sh
+chmod +x presets/*.sh
+chmod +x modules/**/*.sh
+
+# Full++ LMEE
+./lmee.sh full
+
+# Minimal
+./lmee.sh minimal
+
+# Dev
+./lmee.sh dev
